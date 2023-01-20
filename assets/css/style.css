@@ -1,0 +1,132 @@
+@charset "UTH-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+body {
+  background-color: #09090A;
+  color: white;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 48px;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090A;
+}
+
+button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 125%;
+
+  padding: 16px 24px;
+  gap: 12px;
+
+
+
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+/* formulario caracteristicas */
+form{
+  display: flex;
+  
+  padding: 182px 48px 48px;
+  width: fit-content;
+}
+/* Configurando caracteristicas do dia */
+.days{
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+
+  text-align: center;
+}
+.day{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.day div{
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%;
+
+  color: #A1A1AA;
+
+  text-align: center;
+}
+/* Configurando caracteristicas do do habits */
+.habits{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 58px;
+}
+.habit{
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+
+
+
+
+/* Botao caracteristicas */
+
+input{
+  appearance: none;/* Aparencia do botao que vem por padrao */
+  -webkit-appearance: none;/*alguns navegadoe pode precisar para intender e seta as aparencia */
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272a;
+  border-radius: 8px;
+}
+/*Pseudo-Selector*/
+input:checked{
+  background-color: #8B5CF6;
+  border: 2px solid #A78BFA;
+}
+
+@media (max-width:570px){
+  button div{
+    display: none;
+  }
+}
